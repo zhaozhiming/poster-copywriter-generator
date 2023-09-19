@@ -15,20 +15,22 @@ export OPENAI_API_KEY=sk-xxxx
 export HUGGING_FACE_API=hf_xxxx
 ```
 
-## 运行 Agent
+## 运行（两种方式）
+
+### 运行 Agent
 
 ```bash
 python agent.py
 ```
 
-可以在agent.py的最后面修改问题，比如把问题改成其他的再运行：
+可以在 agent.py 的最后面修改问题，比如把问题改成其他的再运行：
 
 ```diff
 -"Use the generate_poster_text tool to generate the text content of the file 'flower.jpeg' and the theme is 'Love'"
 +"Use the generate_poster_text tool to generate the text content of the file 'cow.jpeg' and the theme is 'Milk'"
 ```
 
-## 运行 Webui
+### 运行 Webui
 
 ```bash
 python webui.py
@@ -38,5 +40,5 @@ python webui.py
 
 注意：图片必须是 jpeg 格式，其他格式的没适配
 
-* cow.jpeg
-* flower.jpeg
+- cow.jpeg
+- flower.jpeg
