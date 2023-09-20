@@ -25,7 +25,7 @@ def image_to_text_by_file(img: Image.Image) -> str:
     return img_desc[0]["generated_text"]
 
 
-def process_image_and_text(img, theme: str) -> str:
+def generate_poster_text(img, theme: str) -> str:
     img_desc = image_to_text_by_file(img)
     result = generate_chinese_desc(img_desc=img_desc, theme=theme)
     return result
@@ -42,7 +42,7 @@ def web_ui():
         with gr.Row():
             btn = gr.Button(value="提交", variant="primary")
             gr.ClearButton([img, theme, output], value="清空")
-            btn.click(process_image_and_text, inputs=[img, theme], outputs=[output])
+            btn.click(generate_poster_text, inputs=[img, theme], outputs=[output])
 
     demo.launch()
 
