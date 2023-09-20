@@ -1,5 +1,7 @@
 # 海报文案生成工具
 
+![](demo.jpg)
+
 ## 安装依赖
 
 ```bash
@@ -26,8 +28,8 @@ python agent.py
 可以在 agent.py 的最后面修改问题，比如把问题改成其他的再运行：
 
 ```diff
--"Use the generate_poster_text tool to generate the text content of the file 'flower.jpeg' and the theme is 'Love'"
-+"Use the generate_poster_text tool to generate the text content of the file 'cow.jpeg' and the theme is 'Milk'"
+-"Use the generate_poster_text tool to generate the text content of the file 'img/flower.jpeg' and the theme is 'Love'"
++"Use the generate_poster_text tool to generate the text content of the file 'img/cow.jpeg' and the theme is 'Milk'"
 ```
 
 ### 运行 Webui

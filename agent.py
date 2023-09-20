@@ -87,6 +87,6 @@ def agent_output(promt: str) -> str:
 if __name__ == "__main__":
     print(
         agent_output(
-            "Use the generate_poster_text tool to generate the text content of the file 'flower.jpeg' and the theme is 'Love'"
+            "Use the generate_poster_text tool to generate the text content of the file 'img/flower.jpeg' and the theme is 'Love'"
         )
     )
