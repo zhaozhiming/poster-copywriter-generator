@@ -87,6 +87,7 @@ def agent_output(promt: str) -> str:
 if __name__ == "__main__":
     print(
         agent_output(
+            # 当使用ZERO_SHOT_REACT_DESCRIPTION类型时需要将图片放到外面的目录，同时将`img/`目录去掉
             "Use the generate_poster_text tool to generate the text content of the file 'img/flower.jpeg' and the theme is 'Love'"
         )
     )
